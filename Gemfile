@@ -20,7 +20,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'mini_racer'
+# gem 'mini_racer'
 
 gem 'bootstrap-sass'
 
