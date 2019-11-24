@@ -1,4 +1,4 @@
-class RemoveDocument < ActiveRecord::Migration
+class RemoveDocument < ActiveRecord::Migration[5.1]
   def change
     drop_table :documents
   end

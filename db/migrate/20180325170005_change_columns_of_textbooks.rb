@@ -1,4 +1,4 @@
-class ChangeColumnsOfTextbooks < ActiveRecord::Migration
+class ChangeColumnsOfTextbooks < ActiveRecord::Migration[5.1]
   def change
     remove_reference :text_books, :lesson, index: true, foreign_key: true
     change_column :text_books, :title, :text

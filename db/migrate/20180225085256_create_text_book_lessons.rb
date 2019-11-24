@@ -1,4 +1,4 @@
-class CreateTextBookLessons < ActiveRecord::Migration
+class CreateTextBookLessons < ActiveRecord::Migration[5.1]
   def change
     create_table :text_book_lessons do |t|
       t.references :text_book, index: true, foreign_key: true, null: false

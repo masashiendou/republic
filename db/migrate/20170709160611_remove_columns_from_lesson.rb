@@ -1,4 +1,4 @@
-class RemoveColumnsFromLesson < ActiveRecord::Migration
+class RemoveColumnsFromLesson < ActiveRecord::Migration[5.1]
   def change
     remove_column :lessons, :day, :integer
     remove_column :lessons, :hour, :integer

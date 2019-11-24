@@ -1,4 +1,4 @@
-class CreateCategoryFeatures < ActiveRecord::Migration
+class CreateCategoryFeatures < ActiveRecord::Migration[5.1]
   def change
     create_table :category_features do |t|
       t.references :category, index: true, foreign_key: true

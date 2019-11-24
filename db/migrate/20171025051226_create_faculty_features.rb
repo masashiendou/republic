@@ -1,4 +1,4 @@
-class CreateFacultyFeatures < ActiveRecord::Migration
+class CreateFacultyFeatures < ActiveRecord::Migration[5.1]
   def change
     create_table :faculty_features do |t|
       t.references :faculty, index: true, foreign_key: true

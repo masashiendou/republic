@@ -1,4 +1,4 @@
-class ChangeColumnOfPost < ActiveRecord::Migration
+class ChangeColumnOfPost < ActiveRecord::Migration[5.1]
   def change
     remove_reference :posts, :lesson, index: true, foreign_key: true
 

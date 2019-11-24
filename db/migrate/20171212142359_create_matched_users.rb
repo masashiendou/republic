@@ -1,4 +1,4 @@
-class CreateMatchedUsers < ActiveRecord::Migration
+class CreateMatchedUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :matched_users do |t|
       t.integer :having_user_id, null: false

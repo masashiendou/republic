@@ -1,4 +1,4 @@
-class AddCampusToLesson < ActiveRecord::Migration
+class AddCampusToLesson < ActiveRecord::Migration[5.1]
   def change
     add_column :lessons, :campus, :integer
   end

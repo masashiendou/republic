@@ -1,4 +1,4 @@
-class ChangeColumnsFromBookRequest < ActiveRecord::Migration
+class ChangeColumnsFromBookRequest < ActiveRecord::Migration[5.1]
   def change
     drop_table :book_requests
     create_table :book_requests do |t|

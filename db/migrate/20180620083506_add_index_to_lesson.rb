@@ -1,4 +1,4 @@
-class AddIndexToLesson < ActiveRecord::Migration
+class AddIndexToLesson < ActiveRecord::Migration[5.1]
   def change
     add_index :lessons, :lesson_name
     add_index :lessons, :professor_name

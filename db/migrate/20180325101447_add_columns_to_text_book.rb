@@ -1,4 +1,4 @@
-class AddColumnsToTextBook < ActiveRecord::Migration
+class AddColumnsToTextBook < ActiveRecord::Migration[5.1]
   def change
     add_column :text_books, :amazon_title, :string
     add_column :text_books, :amazon_author, :string

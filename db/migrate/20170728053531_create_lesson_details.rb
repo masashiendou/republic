@@ -1,4 +1,4 @@
-class CreateLessonDetails < ActiveRecord::Migration
+class CreateLessonDetails < ActiveRecord::Migration[5.1]
   def change
     create_table :lesson_details do |t|
       t.references :lesson, index: true, foreign_key: true
