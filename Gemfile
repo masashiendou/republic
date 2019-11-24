@@ -81,6 +81,10 @@ gem 'gretel'
 gem 'wkhtmltopdf-binary-11'
 gem 'wicked_pdf'
 
+# My settings
+gem 'rails-erd'
+
+
 # 環境ごとの設定値を管理
 gem 'config'
 
