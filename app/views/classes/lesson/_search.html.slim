@@ -12,7 +12,8 @@
     .form-group.col-sm-3.col-xs-6
       = select_tag('faculty_id', options_from_collection_for_select(Faculty.all, :id, :faculty_name, {selected: params[:faculty_id]}), prompt: "学部", class: "form-control")
     .form-group.col-sm-3.col-xs-6
-      = render 'classes/lesson/departments', locals: {faculty_id: Faculty.first.id}
+      # = render 'classes/lesson/departments', locals: {faculty_id: Faculty.first.id}
+      = render 'classes/lesson/departments'
   .row
     .form-group.col-sm-3.col-xs-4
       = select_tag 'term', options_for_select({"春学期"=>"1", "秋学期"=>"2", "通年"=>"3", "その他"=>"4"}, {selected: params[:term] || '1'}), include_blank: "学期", class: "form-control"
