@@ -15,6 +15,9 @@ ActiveRecord::Schema.define(version: 20180728122431) do
   create_table "book_requests", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "having_user_id"
     t.integer "request_user_id"
+    # My settings
+    t.integer :requestable_id, null: false
+    t.string :requestable_type, null: false
     t.integer "text_book_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

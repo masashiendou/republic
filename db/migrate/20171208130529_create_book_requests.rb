@@ -3,10 +3,8 @@ class CreateBookRequests < ActiveRecord::Migration[5.1]
     create_table :book_requests do |t|
       t.integer :having_user_id
       t.integer :request_user_id
-      t.integer :requestable_id
-      t.string :requestable_type
-      # t.integer :requestable_id, null: false
-      # t.string :requestable_type, null: false
+      t.integer :requestable_id, null: false
+      t.string :requestable_type, null: false
 
       t.timestamps null: false
     end
