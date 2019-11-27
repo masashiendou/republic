@@ -42,7 +42,7 @@ class User < ApplicationRecord
   after_create do
     # メールアドレスからdeparmentを取得
     department = Department.find_by(code: email.match(/^\d{2}([a-z]{2})/)[1])
-    return false if department.blank?
+    # return false if department.blank?
 
     faculty = department.faculty
     self.department_id = department.id
