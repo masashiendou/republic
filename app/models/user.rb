@@ -38,17 +38,17 @@ class User < ApplicationRecord
   # パートナー権限（手伝ってくれるメンバー）のメルアド
   PARTNERS = ['16xx999h@rikkyo.ac.jp', '17xx999k@rikkyo.ac.jp'].freeze
 
-  # ユーザー新規登録時に、学部と学科を紐づける
-  after_create do
-    # メールアドレスからdeparmentを取得
-    department = Department.find_by(code: email.match(/^\d{2}([a-z]{2})/)[1])
-    return false if department.blank?
+ # # ユーザー新規登録時に、学部と学科を紐づける
+ # after_create do
+ #   # メールアドレスからdeparmentを取得
+ #   department = Department.find_by(code: email.match(/^\d{2}([a-z]{2})/)[1])
+ #   return false if department.blank?
 
-    faculty = department.faculty
-    self.department_id = department.id
-    self.faculty_id = faculty.id
-    save
-  end
+ #   faculty = department.faculty
+ #   self.department_id = department.id
+ #   self.faculty_id = faculty.id
+ #   save
+ # end
 
   def first_grade?
     # 1年生以外かどうか
