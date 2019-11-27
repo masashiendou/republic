@@ -34,23 +34,23 @@ require "csv"
 
 # 2017年のデータを読む時
 # 授業データの年度
-year = "2017"
-LESSON_COUNT = 2052
-# My settings
-SCHEDULE_COUNT = 0
-TEXTBOOK_COUNT = 0
-TEXTBOOKLESSON_COUNT = 0
-# My settings
-EVALUATION_COUNT = 9937
+# year = "2017"
+# LESSON_COUNT = 2052
+## My settings
+# SCHEDULE_COUNT = 0
+# TEXTBOOK_COUNT = 0
+# TEXTBOOKLESSON_COUNT = 0
+## My settings
+# EVALUATION_COUNT = 9937
 
 # 2018年のデータを読む時
 # 授業データの年度
-# year = "2018"
-# LESSON_COUNT = 12372
-# SCHEDULE_COUNT = 152819
-# TEXTBOOK_COUNT = 9936
-# TEXTBOOKLESSON_COUNT = 9937
-# EVALUATION_COUNT = 14266
+year = "2018"
+LESSON_COUNT = 12372
+SCHEDULE_COUNT = 152819
+TEXTBOOK_COUNT = 9936
+TEXTBOOKLESSON_COUNT = 9937
+EVALUATION_COUNT = 14266
 
 Dir.glob("#{Rails.root}/db/fixtures/#{year}/*.csv").sort!.each do |f|
   CSV.read(f).each do |row|
