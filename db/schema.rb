@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20180728122431) do
     # My settings
     t.integer :requestable_id, null: false
     t.string :requestable_type, null: false
-    t.integer "text_book_id", null: false
+    t.integer "text_book_id", null: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["text_book_id"], name: "index_book_requests_on_text_book_id"
