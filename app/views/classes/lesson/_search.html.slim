@@ -12,7 +12,7 @@
     .form-group.col-sm-3.col-xs-6
       = select_tag('faculty_id', options_from_collection_for_select(Faculty.all, :id, :faculty_name, {selected: params[:faculty_id]}), prompt: "学部", class: "form-control")
     .form-group.col-sm-3.col-xs-6
-      # = render 'classes/lesson/departments', locals: {faculty_id: Faculty.first.id}
+      / = render 'classes/lesson/departments', locals: {faculty_id: Faculty.first.id}
       = render 'classes/lesson/departments'
   .row
     .form-group.col-sm-3.col-xs-4
