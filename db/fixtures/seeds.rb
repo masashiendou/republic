@@ -36,12 +36,12 @@ require "csv"
 # 授業データの年度
 year = "2017"
 LESSON_COUNT = 2052
-# My settings
-SCHEDULE_COUNT = 142498
+## My settings
+# SCHEDULE_COUNT = 142498
 TEXTBOOK_COUNT = 0
 TEXTBOOKLESSON_COUNT = 0
-# My settings
-EVALUATION_COUNT = 3945
+## My settings
+# EVALUATION_COUNT = 3945
 
 # 2018年のデータを読む時
 # 授業データの年度
